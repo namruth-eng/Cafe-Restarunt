@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brûlée — Artisan Café & Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-left">
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#specials" class="nav-link">Specials</a>
+    </div>
+    <div class="nav-logo">
+      <span class="logo-text">Brûlée</span>
+      <span class="logo-sub">CAFÉ & RESTAURANT</span>
+    </div>
+    <div class="nav-right">
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#reserve" class="nav-cta">Reserve</a>
+    </div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <div class="mobile-logo">Brûlée</div>
+    <nav class="mobile-nav">
+      <a href="#menu"     onclick="closeMobile()">Menu</a>
+      <a href="#specials" onclick="closeMobile()">Specials</a>
+      <a href="#gallery"  onclick="closeMobile()">Gallery</a>
+      <a href="#about"    onclick="closeMobile()">Our Story</a>
+      <a href="#reserve"  onclick="closeMobile()">Reserve a Table</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&q=85" alt="Café interior" class="hero-img" />
+      <div class="hero-tint"></div>
+    </div>
+    <div class="hero-body">
+      <p class="hero-eyebrow">Est. 2014 · Downtown</p>
+      <h1 class="hero-title">
+        Where Every<br><em>Sip & Bite</em><br>Tells a Story
+      </h1>
+      <p class="hero-tagline">Handcrafted coffee. Slow-cooked meals. A place that feels like home.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-filled">Explore Menu</a>
+        <a href="#reserve" class="btn-outline">Book a Table</a>
+      </div>
+    </div>
+    <div class="hero-badges">
+      <div class="badge">☕ Specialty Coffee</div>
+      <div class="badge">🌿 Farm to Table</div>
+      <div class="badge">🏆 Best Café 2024</div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Artisan Espresso</span><span class="dot">✦</span>
+      <span>House-Baked Pastries</span><span class="dot">✦</span>
+      <span>Seasonal Specials</span><span class="dot">✦</span>
+      <span>Farm-Fresh Ingredients</span><span class="dot">✦</span>
+      <span>Cold Brew & Nitro</span><span class="dot">✦</span>
+      <span>Weekend Brunch</span><span class="dot">✦</span>
+      <span>Private Dining</span><span class="dot">✦</span>
+      <span>Live Jazz Fridays</span><span class="dot">✦</span>
+      <span>Artisan Espresso</span><span class="dot">✦</span>
+      <span>House-Baked Pastries</span><span class="dot">✦</span>
+      <span>Seasonal Specials</span><span class="dot">✦</span>
+      <span>Farm-Fresh Ingredients</span><span class="dot">✦</span>
+      <span>Cold Brew & Nitro</span><span class="dot">✦</span>
+      <span>Weekend Brunch</span><span class="dot">✦</span>
+      <span>Private Dining</span><span class="dot">✦</span>
+      <span>Live Jazz Fridays</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img-col">
+      <div class="about-img-stack">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Barista" class="about-img-main" />
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Latte art" class="about-img-accent" />
+      </div>
+      <div class="about-stat-card">
+        <span class="asc-num">10+</span>
+        <span class="asc-label">Years of Craft</span>
+      </div>
+    </div>
+    <div class="about-text-col">
+      <p class="section-tag">Our Story</p>
+      <h2 class="section-title">A Café Born From <em>Passion</em></h2>
+      <p>Brûlée started as a small corner shop with one espresso machine and a dream. Today, we're a beloved neighbourhood staple — but the heart hasn't changed. Every cup is pulled with intention. Every dish is cooked from scratch.</p>
+      <p>We source our beans from single-origin farms in Ethiopia, Colombia, and Sumatra. Our kitchen changes its menu with the seasons, honouring what the earth gives us.</p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <span class="pillar-icon">🫘</span>
+          <strong>Single Origin</strong>
+          <span>Traceable beans, roasted in-house weekly</span>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">🌱</span>
+          <strong>Sustainable</strong>
+          <span>Zero-waste kitchen, compostable packaging</span>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">👩‍🍳</span>
+          <strong>Made Fresh</strong>
+          <span>Every item prepared to order, daily</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="menu-header">
+      <p class="section-tag">What We Serve</p>
+      <h2 class="section-title">Our <em>Menu</em></h2>
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab active" data-cat="coffee">☕ Coffee</button>
+        <button class="tab" data-cat="food">🍽️ Food</button>
+        <button class="tab" data-cat="pastry">🥐 Pastries</button>
+        <button class="tab" data-cat="drinks">🧃 Drinks</button>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- SPECIALS -->
+  <section class="specials" id="specials">
+    <div class="specials-inner">
+      <div class="specials-text">
+        <p class="section-tag light">Chef's Table</p>
+        <h2 class="section-title light">This Week's <em>Specials</em></h2>
+        <p class="specials-desc">Our chef crafts two rotating specials each week — inspired by what's freshest at the market. Limited plates, unlimited love.</p>
+        <a href="#reserve" class="btn-filled">Reserve Your Spot</a>
+      </div>
+      <div class="specials-cards">
+        <div class="special-card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Pasta special" />
+          <div class="special-info">
+            <span class="special-tag">Main Course</span>
+            <h4>Truffle Mushroom Tagliatelle</h4>
+            <p>Hand-rolled pasta with wild mushrooms, black truffle oil, parmesan snow & fresh thyme.</p>
+            <div class="special-footer">
+              <span class="special-price">$24</span>
+              <span class="special-avail">Limited · 20 plates/day</span>
+            </div>
+          </div>
+        </div>
+        <div class="special-card">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500&q=80" alt="French toast" />
+          <div class="special-info">
+            <span class="special-tag">Brunch</span>
+            <h4>Brioche French Toast Stack</h4>
+            <p>Thick-cut brioche, whipped mascarpone, seasonal berries, house-made lavender honey.</p>
+            <div class="special-footer">
+              <span class="special-price">$16</span>
+              <span class="special-avail">Weekend Only</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <p class="section-tag">Atmosphere</p>
+      <h2 class="section-title">Life Inside <em>Brûlée</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item g-tall">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Café interior" />
+        <div class="g-hover"><span>Cosy Interiors</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Espresso" />
+        <div class="g-hover"><span>Craft Espresso</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&q=80" alt="Pastries" />
+        <div class="g-hover"><span>Fresh Pastries</span></div>
+      </div>
+      <div class="g-item g-wide">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Food plating" />
+        <div class="g-hover"><span>Chef's Kitchen</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=600&q=80" alt="Latte art" />
+        <div class="g-hover"><span>Latte Art</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="testi-header">
+      <p class="section-tag">What Guests Say</p>
+      <h2 class="section-title">Loved by the <em>Community</em></h2>
+    </div>
+    <div class="testi-slider">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>The best flat white I've had outside of Melbourne. The atmosphere is warm, the staff is incredible, and the pastries are divine. My second home.</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/60?img=5" alt="Priya" />
+            <div><strong>Priya Mehta</strong><span>Regular Guest</span></div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>Came in for a quick coffee, stayed for two hours. The truffle pasta is life-changing. Brûlée has become our go-to for every date night.</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/60?img=18" alt="Daniel" />
+            <div><strong>Daniel & Ava</strong><span>Food Enthusiasts</span></div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>The weekend brunch here is unmatched. French toast, cold brew, good music — Brûlée ticks every single box. A gem of a café.</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/60?img=29" alt="Rajan" />
+            <div><strong>Rajan Iyer</strong><span>Food Blogger</span></div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>I host all my client breakfasts at Brûlée. The team is professional, the food impresses every time, and the vibe sets the perfect tone.</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/60?img=44" alt="Sofia" />
+            <div><strong>Sofia Chen</strong><span>Business Owner</span></div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reserve" id="reserve">
+    <div class="reserve-container">
+      <div class="reserve-image">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=700&q=80" alt="Restaurant interior" />
+        <div class="reserve-img-overlay">
+          <div class="hours-card">
+            <h4>Opening Hours</h4>
+            <div class="hours-row"><span>Mon – Fri</span><span>7:00 am – 10:00 pm</span></div>
+            <div class="hours-row"><span>Saturday</span><span>8:00 am – 11:00 pm</span></div>
+            <div class="hours-row"><span>Sunday</span><span>9:00 am – 9:00 pm</span></div>
+            <div class="hours-divider"></div>
+            <p class="hours-note">📍 14 Bloom Street, Downtown</p>
+            <p class="hours-note">📞 (555) 248-3600</p>
+          </div>
+        </div>
+      </div>
+      <div class="reserve-form-col">
+        <p class="section-tag">Reservations</p>
+        <h2 class="section-title" style="font-size:2.6rem; text-align:left;">Book a <em>Table</em></h2>
+        <p class="reserve-sub">Reserve your spot and arrive to a table that's ready for you.</p>
+        <form id="reserveForm" class="reserve-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" id="rFirstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" id="rLastName" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="rEmail" placeholder="jane@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" id="rPhone" placeholder="+1 (555) 000-0000" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date" id="rDate" required />
+            </div>
+            <div class="form-group">
+              <label>Time</label>
+              <select id="rTime">
+                <option value="">Select time...</option>
+                <option>7:00 AM</option><option>8:00 AM</option><option>9:00 AM</option>
+                <option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option>
+                <option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option>
+                <option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option>
+                <option>8:00 PM</option><option>9:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Party Size</label>
+              <select id="rParty">
+                <option value="1">1 person</option>
+                <option value="2" selected>2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">5 people</option>
+                <option value="6">6 people</option>
+                <option value="7+">7+ (large group)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Occasion</label>
+              <select id="rOccasion">
+                <option value="None">None / Regular visit</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Business Lunch</option>
+                <option>Date Night</option>
+                <option>Family Gathering</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Special Requests</label>
+            <textarea id="rRequests" rows="3" placeholder="Dietary restrictions, allergies, seating preferences..."></textarea>
+          </div>
+          <button type="submit" class="btn-filled full" onclick="handleReservation()">Confirm Reservation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Brûlée</div>
+        <p>Artisan café & restaurant since 2014.<br>Crafted with love, served with soul.</p>
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Yelp</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Visit Us</h5>
+          <p>14 Bloom Street<br>Downtown District<br>Open 7 days a week</p>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Today's Specials</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+            <li><a href="#about">Our Story</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#">(555) 248-3600</a></li>
+            <li><a href="#">hello@brulee.cafe</a></li>
+            <li><a href="#">Catering Enquiries</a></li>
+            <li><a href="#">Private Events</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Brûlée Café & Restaurant. All rights reserved.</p>
+      <p>Made with ☕ and a lot of love.</p>
+    </div>
+  </footer>
+
+  <!-- CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-top">
+        <div class="modal-check">✓</div>
+        <h3>Table Reserved!</h3>
+        <p id="modalMsg">We can't wait to see you at Brûlée.</p>
+      </div>
+      <div class="modal-details" id="modalDetails"></div>
+      <button class="btn-filled full" onclick="closeModal()">Perfect, See You Then!</button>
+    </div>
+  </div>
+
+  <!-- CART TOAST -->
+  <div class="cart-toast" id="cartToast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
